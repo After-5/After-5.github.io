@@ -2,7 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 
 :root {
   background-color: whitesmoke;
-  color: black;
+  color: #f4f4f4;
   font-size: 18px;
   font-family: 'Oxygen', sans-serif;
   --title-font: 6rem;
