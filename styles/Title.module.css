@@ -1,0 +1,24 @@
+.container {
+    font-size: var(--title-font);
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    padding: 0;
+
+}
+
+
+.container>div {
+    display: flex;
+    height: var(--title-height);
+    align-items: center;
+}
+
+.container>div>div:first-child {}
+
+.five {
+
+    color: #4db3d0;
+    position: relative;
+    height: inherit;
+    overflow: scroll;
+}
