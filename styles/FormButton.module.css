@@ -1,17 +1,26 @@
 .btn {
+    width: fit-content;
     font-size: 1.1rem;
     color: #4db3d0;
     margin-top: 1.5rem;
     border: 1px solid #4db3d0;
     padding: 0.5rem;
     border-radius: 10px;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+    transition: all ease-in-out 500ms;
+
 }
 
 .btn:hover {
@@ -19,6 +28,6 @@
     /* change the direction of the change here */
     color: #88bdcc;
     border: 1px solid #88bdcc;
-    transition: all ease-in-out 200ms;
     text-decoration: none;
+    cursor: pointer;
 }

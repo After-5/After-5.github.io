@@ -15,11 +15,29 @@ a {
   box-sizing: border-box;
 }
 
-:root {
-  background-color: whitesmoke;
-  color: #f4f4f4;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-  --title-font: 6rem;
-  --title-height: 2.5ex;
+
+@media screen and (min-width: 601px) {
+  :root {
+    background-color: whitesmoke;
+    color: #f4f4f4;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    --title-font: 6rem;
+    --title-height: 2.5ex;
+  }
+
 }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  :root {
+    background-color: whitesmoke;
+    color: #f4f4f4;
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+    --title-font: 6rem;
+    --title-height: 2.5ex;
+  }
+
+}
+
