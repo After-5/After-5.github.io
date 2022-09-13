@@ -16,13 +16,15 @@ var settings = {
   centerMode: true,
   centerPadding: "0",
   variableWidth: true,
-
-  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -34,7 +36,7 @@ var settings = {
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 850,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -55,9 +57,9 @@ const Carousell = () => {
     <div>
       <Slider {...settings}>
         <Card img="/chill.jpg" emoji="😴" />
-        <Card img="/concert.jpg" emoji="😴" />
-        <Card img="/drinks.jpg" emoji="😴" />
-        <Card img="/party.jpg" emoji="😴" />
+        <Card img="/concert.jpg" emoji="🤘" />
+        <Card img="/drinks.jpg" emoji="🍻" />
+        <Card img="/party.jpg" emoji="🪩" />
       </Slider>
     </div>
   );
@@ -66,7 +68,8 @@ const Carousell = () => {
 const Card = ({ img, emoji }: { img: string; emoji: string }) => {
   return (
     <div className={styles.card}>
-      <Image src={img} layout="fill" />
+      <Image src={img} layout="fill" alt={emoji} />
+      <div className={styles.emoji}>{emoji}</div>
     </div>
   );
 };
