@@ -68,7 +68,7 @@ const Carousell = () => {
 const Card = ({ img, emoji }: { img: string; emoji: string }) => {
   return (
     <div className={styles.card}>
-      <Image src={img} layout="fill" alt={emoji} />
+      <Image src={img} layout="fill" alt={emoji} priority />
       <div className={styles.emoji}>{emoji}</div>
     </div>
   );
