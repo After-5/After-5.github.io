@@ -23,7 +23,7 @@ var settings = {
   initialSlide: 0,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   focusOnSelect: true,
   responsive: [
     {
@@ -57,7 +57,7 @@ const Carousell = () => {
     <div>
       <Slider {...settings}>
         <Card img="/chill.jpg" emoji="😴" />
-        <Card img="/concert.jpg" emoji="🤘" />
+        <Card img="/coffee.jpg" emoji="☕" />
         <Card img="/drinks.jpg" emoji="🍻" />
         <Card img="/party.jpg" emoji="🪩" />
       </Slider>
