@@ -15,6 +15,17 @@ a {
   box-sizing: border-box;
 }
 
+.slick-slide {
+  transform: scale(1);
+  transition: all 500ms ease-in-out;
+}
+
+.slick-slide.slick-center {
+  transform: scale(1.1);
+
+
+}
+
 
 @media screen and (min-width: 601px) {
   :root {
@@ -40,4 +51,3 @@ a {
   }
 
 }
-

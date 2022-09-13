@@ -12,3 +12,24 @@
     align-items: center;
     flex-direction: column;
 }
+
+.carro {
+    margin-top: 1.5rem !important;
+    width: 60vw;
+
+    position: relative;
+    background-color: antiquewhite;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .carro {
+        margin-top: 1.5rem !important;
+        width: 80vw;
+
+        position: relative;
+        background-color: antiquewhite;
+    }
+}

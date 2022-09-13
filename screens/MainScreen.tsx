@@ -1,6 +1,7 @@
 import { animated, config, useSpring } from "@react-spring/web";
 import React, { useState } from "react";
 import Background from "../components/Background";
+import Carousell from "../components/Carousell";
 import FormButton from "../components/FormButton";
 import Subtitle from "../components/Subtitile";
 import Title from "../components/Title";
@@ -14,7 +15,6 @@ const MainScreen = () => {
     config: config.molasses,
   });
 
-
   return (
     <div className={styles.container}>
       <Title trigger={() => setShow(true)} />
@@ -23,6 +23,9 @@ const MainScreen = () => {
         <Subtitle />
         <FormButton />
       </animated.div>
+      <div className={styles.carro}>
+        <Carousell />
+      </div>
     </div>
   );
 };
